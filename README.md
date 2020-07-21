@@ -4,11 +4,6 @@ ___
 
 
 <p align="center">
-  <img src="https://readme-maker.herokuapp.com/uploads/8852c9da0bdf9173-logo.png" width="300" heigth="300">
-</p>
-
-
-<p align="center">
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
@@ -19,7 +14,6 @@ ___
 <h3 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
   <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
-  <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
   <a href="#licença">Licença</a>
 </h3>
@@ -27,6 +21,7 @@ ___
 ___
 
 <!-- <img src="https://readme-maker.herokuapp.com/uploads/17f931a766815550-foodfy.PNG" width="1200"> -->
+![FoodFy](public/assets/FoodFy_LaunchBase.gif)
 
 ## :information_source: Sobre
 
