@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+}
+
+.menu {
+    background-color: #111111;
+    height: 80px;
+}
+
+.menu nav a img{
+    margin: 27px 0 0 230px;
+}

@@ -3,7 +3,7 @@ const Intl = require('intl')
 const data = require('../data.json')
 
 exports.index = function (req, res) {
-    return res.render('user/index', { items: data })
+    return res.render('user/index')
 }
 
 exports.about = function (req, res) {
