@@ -30,15 +30,16 @@ form {
     margin: 55px 230px;
 }
 
-form .head h2 {
-    font-size: 24px;
-    line-height: 28px;
-}
-
-form .head {
+.head {
+    margin: 55px 230px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+
+.head h2 {
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .head button[type="submit"],
@@ -51,6 +52,10 @@ form .head {
     font-size: 16px;
     line-height: 19px;
     font-weight: bold;
+}
+
+.head .buttons #delete {
+    background-color: #DC4747;
 }
 
 .content .item {
@@ -183,8 +188,60 @@ form .head {
 }
 
 
-/* === EDIT ===*/
+/* === INDEX === */
 
-#form-delete button[type="submit"] {
-    background-color: #DC4747;
+.content_recipes {
+    margin: 50px 230px;
+}
+
+.content_recipes h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.content_recipes .content_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_recipes .items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content_recipes .items .item img {
+    width: 170px;
+    height: 80px;
+    border-radius: 9px;
+}
+
+.content_recipes .items .item+.item {
+    margin-left: 20px;
+}
+
+.content_recipes .items .item p:nth-child(1) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.content_recipes .items .item p:nth-child(2) {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.content_recipes .items .item a {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button[type="submit"]:hover,
+.main_recipe .title button[type="button"]:hover {
+    box-shadow: 2px 2px 8px -1px rgba(0, 0, 0, 0.7);
 }

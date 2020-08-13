@@ -5,13 +5,51 @@
 {% endblock %}
 
 {% block content %}
-    <form action="/admin/recipes" method="POST">
-        <div class="head">
-            <h2>Criando receita</h2>
-            <button type="submit">Salvar receita</button>
-        </div>
+    <div class="head">
+        <h2>Criando receita</h2>
+        <button form="form-create" type="submit">Salvar receita</button>
+    </div>
+    <form id="form-create" action="/admin/recipes" method="POST">
         <div class="content">
-            {% include 'admin/recipes/field.njk'%}
+            <div class="item">
+                <p>Imagem da Receita</p>
+                <input type="url" name="image_url>
+            </div>
+
+            <div class=" item"="item"">
+                <p>Título da Receita</p>
+                <input type="text" name="title">
+            </div>
+
+            <div class="item">
+                <p>Criado por</p>
+                <input type="text" name="author">
+            </div>
+
+            <div class="item">
+                <p>Ingredientes</p>
+                <div id="ingredients">
+                    <div class="ingredient">
+                        <input type="text" name="ingredients[]" value=""/>
+                    </div>
+                </div>
+                <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+            </div>
+
+            <div class="item">
+                <p>Modo de Preparo</p>
+                <div id="preparings">
+                    <div class="preparing">
+                        <input type="text" name="preparings[]" value=""/>
+                    </div>
+                </div>
+                <button type="button" class="add-preparing">Adicionar novo passo</button>
+            </div>
+
+            <div class="item">
+                <p>Informações Adicionais</p>
+                <textarea name="information" cols="30" rows="10"></textarea>
+            </div>
         </div>
     </form>
 {% endblock %}

@@ -9,7 +9,7 @@
 
     <main class="main_recipe">
 
-        <img src="{{recipe.image}}" alt="{{item.title}}">
+        <img src="{{recipe.image_url}}" alt="{{item.title}}">
         <h1>{{recipe.title}}</h1>
         <p id="author">por
             {{recipe.author}}</p>
@@ -36,8 +36,8 @@
                 </div>
                 <div class="toggle" id="toggle">
                     <ul>
-                        {% for preparation in recipe.preparation%}
-                            <li>{{preparation}}</li>
+                        {% for preparing in recipe.preparings%}
+                            <li>{{preparing}}</li>
                         {% endfor %}
                     </ul>
                 </div>

@@ -1,0 +1,10 @@
+<script>
+    const formDelete = document.querySelector('.head .buttons #delete')
+    console.log(formDelete)
+    formDelete.addEventListener('click', function (event) {
+        const confirmation = confirm('Deseja deletar essa receita?')
+        if (!confirmation) {
+            event.proventDefault()
+        }
+    })
+</script>

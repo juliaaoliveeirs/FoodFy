@@ -1,6 +1,14 @@
-const modalOverlay = document.querySelector('.modal-overlay')
+const currentPage = window.location.pathname
+const menuItems = document.querySelectorAll('.menu .links a')
+console.log(menuItems)
+
+for (item of menuItems) {
+    if (currentPage.includes(item.getAttribute('href'))) {
+        item.classList.add('active')
+    }
+}
+
 const cards = document.querySelectorAll('.card')
-const nav_about = document.querySelector('.nav-about')
 
 for (let i = 0; i < cards.length; i++) {
     // index é a posição do array

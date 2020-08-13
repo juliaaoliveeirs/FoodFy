@@ -23,12 +23,20 @@ nav a {
     line-height: 19px;
 }
 
-.nav-about {
+.menu .links a:nth-child(2) {
     margin: 38px 0 0 122px;
 }
 
-.nav-recipes {
+.menu .links a:nth-child(3) {
     margin: 38px 0 0 30px;
+}
+
+.menu .links a:nth-child(4) {
+    margin: 38px 0 0 30px;
+}
+
+.links a.active {
+    font-weight: bold;
 }
 
 footer {
@@ -140,69 +148,6 @@ footer p {
 
 #recipes {
     margin-top: 56px;
-}
-
-
-/* === MODAL === */
-
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: white;
-    max-width: 660px;
-    height: 413px;
-    border-radius: 16px;
-    margin: 5vh auto;
-    position: relative;
-}
-
-.close-modal {
-    font-size: 16px;
-    color: #999999;
-    cursor: pointer;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.modal-content img {
-    border-radius: 40px;
-    width: 600px;
-    height: 200px;
-    padding: 30px 30px 0 30px;
-    align-items: center;
-}
-
-.modal-content p#modal-title {
-    font-size: 24px;
-    line-height: 21px;
-    color: #111111;
-    padding: 20px 0 5px 0;
-    text-align: center;
-}
-
-.modal-content p {
-    font-size: 18px;
-    line-height: 16px;
-    color: #777777;
-    padding: 0 0 10px 0;
-    text-align: center;
-}
-
-
-/* === MODAL ACTIVE === */
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 
