@@ -54,11 +54,11 @@ function addIngredient() {
 
 document.querySelector(".add-ingredient").addEventListener("click", addIngredient);
 
-function addpreparing() {
-    const preparings = document.querySelector("#preparings");
-    const fieldContainer = document.querySelectorAll(".preparing");
+function addpreparation() {
+    const preparations = document.querySelector("#preparations");
+    const fieldContainer = document.querySelectorAll(".preparation");
 
-    // Realiza um clone do último preparinge adicionado
+    // Realiza um clone do último preparation adicionado
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
 
     // Não adiciona um novo input se o último tem um valor vazio
@@ -66,7 +66,7 @@ function addpreparing() {
 
     // Deixa o valor do input vazio
     newField.children[0].value = "";
-    preparings.appendChild(newField);
+    preparations.appendChild(newField);
 }
 
-document.querySelector(".add-preparing").addEventListener("click", addpreparing);
+document.querySelector(".add-preparation").addEventListener("click", addpreparation);
